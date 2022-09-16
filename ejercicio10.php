@@ -14,10 +14,13 @@ function primo($numeroTotal) {
     }
     if ($cont<=2)
         return $numeroTotal;
+    else 
+        return null;
 }
 
 for ($i = 1; $i <= $num; $i++) {
-    echo primo($i)."<br>";
+    if(primo($i)!=null)
+        echo primo($i)."<br>";
 }
 
 
